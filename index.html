@@ -34,10 +34,23 @@
                     console.log(taskDueTime)
 
                     let todoContainerHTML = document.getElementById("todoContainer")
+
+                    let keyFrames = [
+                        {
+                            transform: "translate(90vw)"
+                        },
+
+                        {
+                            transform: "translate(0vw)"
+                        }
+                    ]
+
                     todoContainerHTML.innerHTML = todoContainerHTML.innerHTML + `<div class="todoItem"> 
                                                                                     <h1>` + taskDescription +`</h1> 
                                                                                     <h2>Due by: ` + taskDueTime +`</h2>
                                                                                 </div>`
+
+                    todoContainerHTML.animate(keyFrames, 1000)
                     taskDescriptionHTML.value = ""
                     taskDueTimeHTML.value = ""
                     
