@@ -25,7 +25,6 @@
             <div>
                 <button onclick='
 
-
                     
                     '>Add to list</button>
             </div>
@@ -35,7 +34,7 @@
         <div id="todoContainer">
             <div class="todoItem">
                 <h1>Test Todo</h1>
-                <h2>Due by: 12:00am</h2>
+                <h2>Due by: 12:00</h2>
             </div>
 
         </div>
@@ -50,6 +49,7 @@
     }
     #header {
         height: 15vh;
+        border: 3px solid blue;
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -69,7 +69,7 @@
     }
 
     #todoForm {
-        border: 3px solid black;
+        border: 3px solid yellow;
         width: 40%;
         display: flex;
         justify-content: center;
@@ -101,11 +101,12 @@
     }
 
     #todoContainer {
-        border: 3px solid black;
+        border: 3px solid pink;
         width: 60%;
         padding: 5%;
         display: flex;
         align-items: start;
+        flex-wrap: wrap;
     }
     .todoItem {
         display: flex;
